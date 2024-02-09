@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title class="cloak">Bloons TD 2 | Watermelon46</title>
+  </head>
+  <body>
+
+    <a style="color: #f1f1f1; position: absolute; background: rgba(0, 0, 0, 0.5); font-size: 20px;
+    padding: 20px; text-align: center; margin: 5px; z-index: 1000; font-family: 'Roboto', sans-serif; border-radius: 7px;
+     text-decoration: none;" href="https://watermelon46.xyz"  target=”_blank” rel="noopener noreferrer" >Watermelon46</a>
+     
+    <script src="/js/main.js"></script>
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script src="ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("btd2.swf");
+      });
+    </script>
+  </body>
+</html>
